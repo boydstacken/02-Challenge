@@ -1,0 +1,100 @@
+body {
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+header nav {
+    float: right;
+}
+/*header section*/
+header {
+    color: steelblue;
+    margin-left: 0px;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 32px;
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 22px;
+}
+
+li {
+    float: right;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: lightgray;
+    color: steelblue;
+}
+
+/* Page wrapper for main sections*/
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.big-image {
+   flex-basis: 100%;
+}
+
+.big-image img {
+    width: 150%;
+}
+
+.image-container img,
+.small-image img {
+    width: 15%;
+    height: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+    .image-container {
+        flex-basis: 100%;
+    }
+}
+
+section h1 {
+    padding-bottom: 20%;
+    margin: auto;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-section ul {
+    display:inline-block;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.contact-section li {
+    margin: 0 10px;
+}
