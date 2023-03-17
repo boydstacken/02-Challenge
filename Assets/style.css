@@ -56,40 +56,52 @@ a {
 /*add flex box to try and format imagery*/
 .flexbox-container {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     ...
     gap: 10px;
     gap: 10px 20px;
     row-gap: 10px;
-    column-gap: 20px;
+    column-gap: 10px;
     flex-direction: row;
     padding: 10px;
 }
 
-.image-container img {
-    flex-basis: 25%;
-    flex-wrap: wrap;
-    position: relative;
+.gallery {}
+
+.gallery ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
 }
 
-.big-image {
-   flex-basis: 100%;
-}
+.gallery li {
+    margin: 0 10px;
+    flex-basis: calc(50% -20px)
+ }
 
-.big-image img {
-    width: 150%;
-}
+ .gallery img {
+    width: 50%;
+    height: auto;
+    flex-flow: row wrap;
 
-.image-container img,
-.small-image img {
-    width: 15%;
-    height: 20%;
-}
+ }
+
 
 @media only screen and (max-width: 768px) {
-    .image-container {
+    .flexbox-container {
+        flex-basis: 100%;
+    }
+
+
+@media only screen and (max-width: 768px) {
+    .gallery {
         flex-basis: 100%;
     }
 }
+
 
 .contact-section {
     display: flex;
@@ -105,4 +117,6 @@ a {
 
 .contact-section li {
     margin: 0 10px;
+    justify-content: center;
+
 }
