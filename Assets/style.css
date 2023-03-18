@@ -69,7 +69,6 @@ a {
 * {
     box-sizing: border-box;
 }
-
 .paragraph-section {
     display: flex; 
     justify-content: center; 
@@ -93,6 +92,15 @@ a {
     width: fit-content
     justify: right;
     align-content: center;
+}
+
+.vl {
+    border-left: 3px solid steelblue;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
 
 .aboutString{
@@ -120,6 +128,7 @@ a {
 .gallery-section {
     display: flex; 
     justify-content: center;
+    padding-left: 10px;
 }
 
  .gallery img {
@@ -127,17 +136,17 @@ a {
     height: 500px;
     flex-flow: row wrap;
     justify-content: center;
-    padding-right: 10px;
  }
 
 .gallery ul {
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
-    
+    padding-right: px;
+
 }
 
 .gallery li {
@@ -158,29 +167,32 @@ a {
     }
 }
 
-.contact-section {
+.contact section {
     display: flex; 
-    justify-content: center; 
-}
-
-.contact-section h2{
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    display:inline-block;
-
-
-}
-
-.contact-section-ul-items {
-    display:inline-block;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-}
-
-.contact-section li {
-    margin: 0 10px;
     justify-content: center;
+    text-align: start;
+    height: auto;
+    width: fit-content;
+    padding: 100px;
+    align-content: center;
+    border-style: solid;
+    border-color: steelblue;
+}
 
+.verticalLine {
+    border-left: 2px solid steelblue;
+    height: 20px;
+}
+
+.contact section ul {
+    display:inline-block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+}
+
+contact section li {
+    
 }
