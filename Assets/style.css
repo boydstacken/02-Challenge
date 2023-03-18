@@ -142,11 +142,12 @@ a {
 
  .gallery img {
     width: 100%;
-    height: 500px;
     flex-flow: row wrap;
     justify-content: center;
  }
-
+.img-styling {
+    height: 500px;
+}
 .gallery ul {
     width: 100%;
     height: auto;
@@ -154,8 +155,6 @@ a {
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
-    padding-right: px;
-
 }
 
 .gallery li {
@@ -210,4 +209,22 @@ a {
 
 contact section li {
     
+}
+
+.about-styling {
+    border-right: solid;
+    margin-top: 10px;
+}
+
+.work-styling {
+    border-right: solid;
+    height: 500px;
+    padding-right: 10px;
+    padding-top: 250px;
+}
+
+.contact-styling {
+    border-right: solid;
+    margin-top: 10px;
+    padding-right: 10px;
 }
