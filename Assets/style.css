@@ -43,6 +43,11 @@ a {
     color: steelblue;
 }
 
+.hero-image {
+    height: 50%;
+    background-position;
+}
+
 /* Page wrapper for main sections*/
 .wrapper {
     margin-right: auto;
@@ -73,7 +78,7 @@ a {
 
 .gallery ul {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -83,13 +88,11 @@ a {
  }
 
  .gallery img {
-    width: 50%;
+    width: 100%;
     height: auto;
-    flex-flow: row wrap;
-
  }
 
-
+/* Added media queries for smaller screens*/
 @media only screen and (max-width: 768px) {
     .flexbox-container {
         flex-basis: 100%;
