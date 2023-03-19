@@ -63,9 +63,12 @@ a {
 }
 
 .outdoor-image {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 500px;
     padding-right: 0px;
+    background-image: url(./Michigan\ Banner\ 3.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-text {
@@ -143,7 +146,12 @@ a {
     padding: 10px;
     
 }
-
+.flexbox-container h2 {
+    width: 100px;
+}
+.flexbox-container h2 {
+    width: 100px;
+}
 /*added gallery class to group images together inside the flexbox container*/
 .gallery-section {
     display: flex; 
@@ -152,7 +160,8 @@ a {
 }
 
 .gallery img {
-    width: 100%;
+    display: flex;
+    max-width: 100%;
     flex-flow: row wrap;
     justify-content: center;
  }
@@ -165,7 +174,7 @@ a {
 }
 
 .img-styling {
-    height: 510px;
+    height: 100%;
 }
 
 .gallery ul {
@@ -175,7 +184,7 @@ a {
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
-    padding-left: 0px;
+    padding-left: 30px;
 }
 
 .gallery li {
@@ -223,6 +232,10 @@ a {
 
 }
 
+/*mouse over link*/
+a:hover {
+    background: steelblue;
+}
 
 /* Added media queries for smaller screens*/
 
