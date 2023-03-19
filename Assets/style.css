@@ -59,7 +59,7 @@ a {
     background-size: cover;
     position: relative;
     padding-right: 20px;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
 }
 
 .outdoor-image {
@@ -107,8 +107,11 @@ a {
     width: fit-content;
     padding: 100px;
     align-content: center;
-    border-right: 100%;
-    border-color: steelblue;
+}
+
+.about-styling {
+    border-right: solid;
+    margin-top: 10px;
 }
 
 .paragraph-content {
@@ -119,15 +122,6 @@ a {
     width: fit-content;
     justify-content: right;
     align-content: center;
-}
-
-.vl {
-    border-left: 3px solid steelblue;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 0;
 }
 
 .aboutString{
@@ -162,9 +156,18 @@ a {
     flex-flow: row wrap;
     justify-content: center;
  }
+
+ .work-styling {
+    border-right: solid;
+    height: 500px;
+    padding-right: 10px;
+    padding-top: 250px;
+}
+
 .img-styling {
     height: 510px;
 }
+
 .gallery ul {
     width: 100%;
     height: auto;
@@ -179,6 +182,47 @@ a {
     margin: 0 10px;
     width: 40%;
  }
+
+ * {
+    box-sizing: border-box;
+}
+.contact-section {
+    display: flex; 
+    justify-content: center; 
+}
+.contact-section-styling {
+    border-right: solid;
+    margin-top: 10px;
+}
+
+.contact-section ul {
+    display:block;
+    justify-content: right;
+    margin-right: auto;
+    margin-left: 0px;
+    text-align: left;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    height: auto;
+    width: fit-content;
+}
+
+.contact-sectiion li {
+    text-align: start;
+    float: right;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.contact-section a {
+    display: inline-block;
+    padding: 20px;
+    background-color: white;
+    color: #3d3935;
+
+}
+
 
 /* Added media queries for smaller screens*/
 
@@ -221,50 +265,4 @@ a {
     .img-styling {
         flex-basis: 100%;
     }
-}
-
-
-
-.contact section {
-    display: flex; 
-    justify-content: center;
-    text-align: start;
-    height: auto;
-    width: fit-content;
-    padding: 100px;
-    align-content: center;
-    border-style: solid;
-    border-color: steelblue;
-}
-
-.verticalLine {
-    border-left: 2px solid steelblue;
-    height: 20px;
-}
-
-.contact section ul {
-    display:inline-block;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    list-style: none;
-    padding: 20px;
-}
-
-.about-styling {
-    border-right: solid;
-    margin-top: 10px;
-}
-
-.work-styling {
-    border-right: solid;
-    height: 500px;
-    padding-right: 10px;
-    padding-top: 250px;
-}
-
-.contact-styling {
-    border-right: solid;
-    margin-top: 10px;
-    padding-right: 10px;
 }
