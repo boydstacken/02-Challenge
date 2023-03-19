@@ -28,6 +28,7 @@ header h1 {
     width: 75px;
     height: 75px;
     margin-right: 20px;
+    border-radius: 50%;
 }
 
 ul {
@@ -48,9 +49,11 @@ a {
     color: white;
 }
 
+/* Hero image with text*/
 .hero-image {
-    height: 50%;
-    width: fit-content;
+    background-image: linear-gradient(rgba (0,0,0,0.5), rgba(0,0,0.5));
+    height: auto;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,15 +62,24 @@ a {
     padding-bottom: 5%;
 }
 
+.outdoor-image {
+    width: 100vw;
+    height: auto;
+    padding-right: 0px;
+}
+
 .hero-text {
     color: white; 
     align-items: center;
+    justify-content: center;
+    text-align: center;
     vertical-align: middle;
+    align-content: center;
     position: absolute;
     top: 50%;
-    bottom: 50%;
     transform: translate (-50%, -50%);
     padding-left: 45%;
+    text-shadow: #3d3935 1px 0 10px;
 
 }
 
@@ -145,13 +157,13 @@ a {
     padding-left: 10px;
 }
 
- .gallery img {
+.gallery img {
     width: 100%;
     flex-flow: row wrap;
     justify-content: center;
  }
 .img-styling {
-    height: 500px;
+    height: 510px;
 }
 .gallery ul {
     width: 100%;
@@ -160,6 +172,7 @@ a {
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
+    padding-left: 0px;
 }
 
 .gallery li {
@@ -168,8 +181,20 @@ a {
  }
 
 /* Added media queries for smaller screens*/
+
+@media only screen and (max-width: 768px) {
+    img src .profile-picture {
+        flex-basis: 100%;
+    }
+}
 @media only screen and (max-width: 768px) {
     .hero-image {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .outdoor-image {
         flex-basis: 100%;
     }
 }
@@ -181,10 +206,24 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-    .gallery {
+    .gallery-section {
         flex-basis: 100%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .gallery img {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .img-styling {
+        flex-basis: 100%;
+    }
+}
+
+
 
 .contact section {
     display: flex; 
